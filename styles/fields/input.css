@@ -47,10 +47,9 @@ input[type="date"] {
 }
 
 select{
-  background: url(../../assets/Icons/Vector.svg)
-  no-repeat right 100%;
-
-  /* não ficou igual */
+  background: url(../../assets/Icons/arrow-down-01.svg)  no-repeat;
+  background-position: right 13px center;
+  
 }
 
 .address .flex {
