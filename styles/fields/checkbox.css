@@ -27,4 +27,13 @@
     background-repeat: no-repeat;
   }
 
+  &:hover, &:focus-within{
+    .checkbox-image{
+      background-image: url(../../assets/Icons/checkbox-hover.svg);
+    }
+  }
+  &:has(:checked) .checkbox-image{
+    background-image: url(../../assets/Icons/checkbox-checked.svg);
+  }
+
 }
