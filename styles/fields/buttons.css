@@ -7,6 +7,7 @@ button{
     cursor: pointer;
 
     &.btn-primary{
+        text-align: center;
         color: white;
         background-color: #E43A12;
 
@@ -18,7 +19,7 @@ button{
     }
 
     &.btn-secondary{
-        margin-left: auto;
+        text-align: center;
         border: 1px solid var(--text-highlight);
 
         
@@ -30,3 +31,10 @@ button{
     }
 }
 
+
+@media(width>=80em){
+    .btn-secondary{
+        margin-left:auto;
+        
+    }
+}

@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 :root{
   --font-family:'Poppins', sans-serif;
   --text:400 1rem/1.5 var(--font-family);
@@ -25,8 +27,6 @@
 }
 
 body{
-  overflow: hidden;
-
   font: var(--text);
   color:var(--text-secondary);
 }
@@ -40,8 +40,38 @@ img{
   height: auto;
 }
 
+.desktop-only{
+  display: none;
+}
+
+.mobile-only{
+  display: initial;
+}
+
 .flex{
   display: flex;
+  flex-direction: column;
+}
+
+@media(width>= 80em){
+  body{
+  overflow: hidden;
+
+  font: var(--text);
+  color:var(--text-secondary);
+}
+
+.desktop-only{
+  display: initial;
+}
+
+.mobile-only{
+  display: none;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
 }
 
 .flex-1{
@@ -50,4 +80,5 @@ img{
 
 .flex-2{
   flex:2
+}
 }
